@@ -5,4 +5,4 @@ run
 > sbt test gatling:test
 
 gatling results are in 
-<project>/target/gatling/candletest-4-load-gatling-<tag>/index.html
+[project]/target/gatling/candletest-4-load-gatling-[tag]/index.html
