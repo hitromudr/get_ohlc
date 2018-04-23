@@ -1,0 +1,95 @@
+$ sbt test gatling:test
+[info] Loading settings from plugins.sbt ...
+[info] Loading project definition from D:\Work\Scala\ttt\project
+[info] Updating ProjectRef(uri("file:/D:/Work/Scala/ttt/project/"), "ttt-build")...
+[info] Done updating.
+[info] Loading settings from build.sbt ...
+[info] Set current project to Candles (in build file:/D:/Work/Scala/ttt/)
+[info] Updating ...
+[info] Done updating.
+[info] Compiling 1 Scala source to D:\Work\Scala\ttt\target\scala-2.12\classes ...
+[info] Done compiling.
+[info] Compiling 4 Scala sources to D:\Work\Scala\ttt\target\scala-2.12\test-classes ...
+[info] Done compiling.
+[info] CandleTest_1_Valid_ScalaTest:
+[info] get_ohlc
+[info] - should return 0,0,0,0 in case of get_ohlc("reset") - initializing
+[info] - should return 5,5,5,5 in case of get_ohlc(5)
+[info] - should return 5,9,5,9 in case of get_ohlc(9)
+[info] - should return 5,9,1,1 in case of get_ohlc(1)
+[info] - should return 0,0,0,0 in case of get_ohlc("RESET")
+[info] - should return 3,3,3,3 in case of get_ohlc(3)
+[info] - should return 3,99,3,99 in case of get_ohlc(99)
+[info] - should return 3,99,2,2 in case of get_ohlc(2)
+[info] CandleTest_2_Invalid_ScalaTest:
+[info] get_ohlc
+[info] - should return 0,0,0,0 in case of get_ohlc("reset") - initializing
+[info] - should return 7,7,7,7 initialized by get_ohlc(7)
+[info] - should return 7,7,7,7 in case of get_ohlc(-1) - ignore negative values
+[info] - should return 7,7,7,7 in case of get_ohlc(1.0) - we treat float as invalid data for simplicity
+[info] - should return 7,7,7,7 in case of get_ohlc("invalid text data") - ignore text not equal to reset
+[info] - should return 7,7,7,7 in case of get_ohlc("invalid data with special symbols $#%&^?*_\") - ignore special characters
+[info] CandleTest_3_Resources_ScalaTestWithMF:
+[info] get_ohlc
+[info] - should run 1000 cycles of loop for data collection
+[info] + ** JVM Used Memory:    142 Mb
+[info] + ** JVM Free Memory:    797 Mb
+[info] + ** JVM Total Memory:   940 Mb
+[info] + ** JVM Max Memory:     940 Mb
+[info] + ** Average CPU Usage:  12 %
+[info] + ** Process CPU Time :  201984 ms
+[info] Run completed in 12 seconds, 466 milliseconds.
+[info] Total number of tests run: 15
+[info] Suites: completed 3, aborted 0
+[info] Tests: succeeded 15, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[success] Total time: 38 s, completed 23.04.2018 9:28:02
+[info] Compiling 4 Scala sources to D:\Work\Scala\ttt\target\scala-2.12\gatling-classes ...
+[info] Done compiling.
+Simulation CandleTest_4_Load_Gatling started...
+
+================================================================================
+2018-04-23 09:28:15                                           4s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=479    KO=21    )
+> get_ohlc(value)                                          (OK=479    KO=21    )
+---- Errors --------------------------------------------------------------------
+> Test failed                                                        21 (100,0%)
+
+---- CandleTest_3_Load ---------------------------------------------------------
+[##########################################################################]100%
+          waiting: 0      / active: 0      / done:500
+================================================================================
+
+Simulation CandleTest_4_Load_Gatling completed in 4 seconds
+Parsing log file(s)...
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                        500 (OK=479    KO=21    )
+> min response time                                      0 (OK=0      KO=0     )
+> max response time                                     20 (OK=20     KO=20    )
+> mean response time                                     9 (OK=9      KO=8     )
+> std deviation                                          6 (OK=6      KO=6     )
+> response time 50th percentile                          9 (OK=9      KO=9     )
+> response time 75th percentile                         14 (OK=14     KO=14    )
+> response time 95th percentile                         19 (OK=19     KO=15    )
+> response time 99th percentile                         19 (OK=19     KO=19    )
+> mean requests/sec                                    100 (OK=95.8   KO=4.2   )
+---- Response Time Distribution ------------------------------------------------
+> t < 5 ms                                             133 ( 27%)
+> 5 ms < t < 10 ms                                     152 ( 30%)
+> t > 10 ms                                            194 ( 39%)
+> failed                                                21 (  4%)
+---- Errors --------------------------------------------------------------------
+> Test failed                                                        21 (100,0%)
+================================================================================
+
+Reports generated in 1s.
+Please open the following file: D:\Work\Scala\ttt\target\gatling\candletest-4-load-gatling-1524464890503\index.html
+[info] Simulation CandleTest_4_Load_Gatling successful.
+[info] Simulation(s) execution ended.
+[success] Total time: 16 s, completed 23.04.2018 9:28:18
+
