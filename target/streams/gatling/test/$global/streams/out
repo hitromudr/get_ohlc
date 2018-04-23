@@ -1,0 +1,10 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector(-Dsbt.ivy.home=D:/Repos/.ivy2, -Dsbt.global.base=D:/Repos/.sbt, -Dftp.proxyHost=92.222.79.39, -Djna.loaded=true, -Djna.nosys=true, -Dhttps.proxyHost=92.222.79.39, -Djnidispatch.path=C:\Users\HITROM~1\AppData\Local\Temp\jna-264597798\jna6153705438264168054.dll, -Dhttp.proxyPort=8181, -Dftp.proxyPort=8181, -Dhttp.proxyHost=92.222.79.39, -Dsbt.cygwin=true, -Dhttps.proxyPort=8181, -Dsbt.boot.directory=D:/Repos/.sbt/boot, -server, -Xmx1G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=30, -XX:G1HeapRegionSize=16m, -XX:InitiatingHeapOccupancyPercent=75, -XX:+ParallelRefProcEnabled, -XX:+PerfDisableSharedMem, -XX:+AggressiveOpts, -XX:+OptimizeStringConcat, -XX:+HeapDumpOnOutOfMemoryError, -Djava.net.preferIPv4Stack=true, -Djava.net.preferIPv6Addresses=false)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for io.gatling.sbt.GatlingFramework produced 1 initial tasks for 1 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(CandleTest_4_Load_Gatling, sbt.ForkMain$SubclassFingerscan@199dda75, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0mSimulation CandleTest_4_Load_Gatling successful.[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0minfo[0m] [0m[0mSimulation(s) execution ended.[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CandleTest_4_Load_Gatling[0m

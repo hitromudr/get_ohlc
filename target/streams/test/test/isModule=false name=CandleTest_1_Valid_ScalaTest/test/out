@@ -1,0 +1,10 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCandleTest_1_Valid_ScalaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mget_ohlc[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 0,0,0,0 in case of get_ohlc("reset") - initializing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 5,5,5,5 in case of get_ohlc(5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 5,9,5,9 in case of get_ohlc(9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 5,9,1,1 in case of get_ohlc(1)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 0,0,0,0 in case of get_ohlc("RESET")[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 3,3,3,3 in case of get_ohlc(3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 3,99,3,99 in case of get_ohlc(99)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 3,99,2,2 in case of get_ohlc(2)[0m[0m

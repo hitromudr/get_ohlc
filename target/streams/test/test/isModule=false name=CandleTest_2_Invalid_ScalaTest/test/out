@@ -1,0 +1,8 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCandleTest_2_Invalid_ScalaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mget_ohlc[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 0,0,0,0 in case of get_ohlc("reset") - initializing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 7,7,7,7 initialized by get_ohlc(7)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 7,7,7,7 in case of get_ohlc(-1) - ignore negative values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 7,7,7,7 in case of get_ohlc(1.0) - we treat float as invalid data for simplicity[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 7,7,7,7 in case of get_ohlc("invalid text data") - ignore text not equal to reset[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 7,7,7,7 in case of get_ohlc("invalid data with special symbols $#%&^?*_\") - ignore special characters[0m[0m

@@ -1,0 +1,9 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCandleTest_3_Resources_ScalaTestWithMF:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mget_ohlc[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should run 1000 cycles of loop for data collection[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+ ** JVM Used Memory:    280 Mb [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+ ** JVM Free Memory:    687 Mb [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+ ** JVM Total Memory:   968 Mb [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+ ** JVM Max Memory:     968 Mb [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+ ** Average CPU Usage:  15 % [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+ ** Process CPU Time :  150796 ms [0m[0m

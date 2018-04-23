@@ -1,0 +1,10 @@
+{
+  "simulation": "CandleTest_4_Load_Gatling",
+  "simulationId": "candletest-4-load-gatling",
+  "start": 1524463843134,
+  "description": "",
+  "scenarios": ["CandleTest_3_Load"],
+  "assertions": [
+
+  ]
+}
